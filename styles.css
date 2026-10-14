@@ -9,8 +9,8 @@
   --cream-soft:  #FFFFFF;
   --beige:       #E2D5C2;
   --stone:       #9B8174;
-  --rose:        #D9B7B0;   /* dusty rose accent */
-  --rose-soft:   #EBD4CF;
+  --rose:        #F2C8C4;   /* powder pink */
+  --rose-soft:   #F7DCD8;
   --merlot:      #5A0616;
   --merlot-deep: #3F0410;
   --merlot-text: #4E0512;
@@ -90,7 +90,7 @@ p { margin: 0 0 1.1em; }
   color: var(--cream);
   line-height: 0;
 }
-.nav__logo { height: 30px; width: auto; display: block; }
+.nav__logo { height: 36px; width: auto; display: block; }
 .foot__logo { height: 48px; width: auto; display: block; }
 .nav__links {
   display: flex; gap: clamp(18px, 3vw, 40px);
@@ -186,7 +186,8 @@ p { margin: 0 0 1.1em; }
   font-weight: 500;
   font-size: clamp(28px, 3.4vw, 44px);
   line-height: 1;
-  letter-spacing: .08em;
+  font-style: italic;
+  letter-spacing: .02em;
   color: var(--merlot);
   text-transform: uppercase;
 }
@@ -221,10 +222,27 @@ p { margin: 0 0 1.1em; }
   line-height: .88;
   color: var(--ink);
 }
-.wordmark__svg {
-  width: min(540px, 100%);
-  height: auto;
+.wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--merlot);
+}
+.wordmark__silk {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(88px, 13vw, 190px);
+  letter-spacing: .02em;
+  line-height: 1;
+}
+.wordmark__adv {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(46px, 6.8vw, 100px);
+  line-height: 1;
+  margin-top: -.3em;
 }
 .hero__tagline {
   margin: 36px 0 24px;
