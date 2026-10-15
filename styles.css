@@ -370,7 +370,7 @@ p { margin: 0 0 1.1em; }
   position: relative;
   background: var(--merlot);
   color: var(--cream);
-  padding: clamp(110px, 16vw, 200px) var(--gutter);
+  padding: clamp(64px, 8vw, 112px) var(--gutter);
   text-align: center;
   overflow: hidden;
 }
@@ -385,7 +385,7 @@ p { margin: 0 0 1.1em; }
 .pullquote__mark {
   font-family: var(--display);
   font-weight: 500;
-  font-size: clamp(120px, 18vw, 200px);
+  font-size: clamp(80px, 10vw, 120px);
   line-height: .6;
   color: var(--cream-2);
   margin: 0 0 16px;
@@ -394,13 +394,14 @@ p { margin: 0 0 1.1em; }
 .pullquote blockquote {
   position: relative;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   font-family: var(--display);
   font-weight: 500;
-  font-size: clamp(32px, 5vw, 68px);
+  font-size: clamp(28px, 4vw, 54px);
   line-height: 1.12;
   color: var(--cream);
   letter-spacing: -.005em;
+  text-wrap: balance;
 }
 .pullquote blockquote em {
   font-family: var(--serif);
@@ -410,7 +411,7 @@ p { margin: 0 0 1.1em; }
 }
 .pullquote__sig {
   position: relative;
-  margin: 44px 0 0;
+  margin: 32px 0 0;
   font-size: 11px;
   letter-spacing: .42em;
   text-transform: uppercase;
