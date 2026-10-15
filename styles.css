@@ -850,3 +850,26 @@ input, textarea, select, button {
 #services .services__list li { border-bottom-color: var(--line); }
 #services .services__list li > span { color: var(--muted); }
 #services .services__list h3 { color: var(--ink); }
+
+
+
+
+/* Contact on warm cream instead of dark merlot */
+#contact { background: var(--cream-2); color: var(--ink); }
+#contact .section__rail { color: rgba(78,5,18,.55); }
+#contact .section__rail .rail-num { color: var(--merlot); }
+#contact .display--light,
+#contact .display--light em { color: var(--merlot); }
+#contact .contact__intro { color: var(--ink); }
+#contact .contact__grid { border-top-color: var(--line); }
+#contact .contact__form label span,
+#contact .contact__label { color: var(--muted); }
+#contact .contact__form input,
+#contact .contact__form textarea { color: var(--ink); border-bottom-color: var(--line); }
+#contact .contact__form input:focus,
+#contact .contact__form textarea:focus { border-color: var(--merlot); }
+#contact .contact__details p,
+#contact .contact__details a { color: var(--ink); }
+#contact .contact__details a { border-bottom-color: var(--line); }
+#contact .btn--light { border-color: var(--merlot); color: var(--merlot); }
+#contact .btn--light:hover { background: var(--merlot); color: var(--cream); }
