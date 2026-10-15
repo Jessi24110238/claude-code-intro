@@ -190,7 +190,7 @@ p { margin: 0 0 1.1em; }
   font-family: var(--display);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(48px, 8vw, 118px);
+  font-size: clamp(36px, 5.6vw, 84px);
   letter-spacing: .1em;
   margin-right: -.1em;
   line-height: 1;
@@ -777,7 +777,7 @@ p { margin: 0 0 1.1em; }
 
   .hero { padding-top: 120px; padding-bottom: 110px; }
   .wordmark__silk { font-size: clamp(72px, 22vw, 110px); }
-  .wordmark__adv { font-size: clamp(36px, 11vw, 55px); }
+  .wordmark__adv { font-size: clamp(28px, 8vw, 40px); }
   .hero__tagline { margin: 40px 0 22px; letter-spacing: .26em; line-height: 2; }
   .hero__tagline-sep { display: none; }
   .hero__tagline-pair { display: block; }
