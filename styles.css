@@ -362,18 +362,6 @@ p { margin: 0 0 1.1em; }
   text-transform: none;
   color: var(--merlot);
 }
-.tags {
-  margin-top: 32px;
-  display: flex; flex-wrap: wrap; gap: 8px 10px;
-}
-.tags span {
-  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
-  padding: 8px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  white-space: nowrap;
-}
 
 /* ============================================================
    PULL QUOTE — full merlot, cream type
@@ -736,7 +724,6 @@ p { margin: 0 0 1.1em; }
   .section--about .about__copy { grid-column: 1; }
   .section--about .about__head { margin-bottom: 0; }
   .about__portrait { max-width: 300px; position: static; }
-  .tags span { white-space: normal; }
 
   .principles { grid-template-columns: 1fr 1fr; }
   .timeline li { grid-template-columns: 160px 1fr; row-gap: 6px; }
@@ -791,7 +778,7 @@ p { margin: 0 0 1.1em; }
 
 /* Labels, menus and buttons stay in the clean sans; running text is serif */
 .nav__links, .eyebrow, .hero__tagline, .btn,
-.section__rail, .about__rail, .tags span, .pullquote__sig, .t-year,
+.section__rail, .about__rail, .pullquote__sig, .t-year,
 .contact__form label span, .contact__label, .foot__tag, .foot__bot,
 input, textarea, select, button {
   font-family: var(--sans);
