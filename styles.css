@@ -775,8 +775,9 @@ p { margin: 0 0 1.1em; }
   .services__list li { grid-template-columns: 50px 1fr; }
   .services__list li:hover { padding-left: 0; }
 
-  .timeline li { grid-template-columns: 1fr; }
-  .timeline li .t-year { margin-bottom: 4px; }
+  .timeline li { grid-template-columns: 1fr; row-gap: 4px; }
+  .timeline li .t-role { grid-column: 1; }
+  .timeline li .t-year { margin-bottom: 4px; white-space: nowrap; }
 
   .contribution__list li { padding-left: 36px; font-size: 19px; }
 
