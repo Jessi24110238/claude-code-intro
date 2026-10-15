@@ -836,3 +836,17 @@ p { margin: 0 0 1.1em; }
 input, textarea, select, button {
   font-family: var(--sans);
 }
+
+
+
+/* Services on cream instead of dark merlot */
+#services { background: var(--cream); color: var(--ink); }
+#services .section__rail { color: rgba(78,5,18,.55); }
+#services .section__rail .rail-num { color: var(--merlot); }
+#services .display--light,
+#services .display--light em { color: var(--merlot); }
+#services .services__intro { color: var(--ink); }
+#services .services__list { border-top-color: var(--line); }
+#services .services__list li { border-bottom-color: var(--line); }
+#services .services__list li > span { color: var(--muted); }
+#services .services__list h3 { color: var(--ink); }
