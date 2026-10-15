@@ -209,7 +209,7 @@ p { margin: 0 0 1.1em; }
   line-height: 1.4;
   color: var(--merlot);
   max-width: 700px;
-  margin: 0 auto 64px;
+  margin: 0 auto;
   text-wrap: balance;
 }
 
@@ -786,7 +786,7 @@ p { margin: 0 0 1.1em; }
   .hero__tagline { margin: 40px 0 22px; letter-spacing: .26em; line-height: 2; }
   .hero__tagline-sep { display: none; }
   .hero__tagline-pair { display: block; }
-  .hero__lede { font-size: 19px; margin-bottom: 48px; }
+  .hero__lede { font-size: 19px; }
 }
 
 /* Labels, menus and buttons stay in the clean sans; running text is serif */
