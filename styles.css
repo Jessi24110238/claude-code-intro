@@ -171,18 +171,19 @@ p { margin: 0 0 1.1em; }
 .wordmark {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-end;   /* Advisory sits right-aligned under SILK */
+  text-align: right;
   color: var(--merlot);
 }
-/* letter-spacing also trails the last letter, so mirror it on the left to keep each line optically centred */
+/* letter-spacing also trails the last letter; a matching negative right margin
+   keeps the visible glyphs flush right and the whole mark optically centred */
 .wordmark__silk {
   font-family: var(--display);
   font-style: italic;
   font-weight: 500;
   font-size: clamp(96px, 16vw, 236px);
-  letter-spacing: .07em;
-  padding-left: .07em;
+  letter-spacing: .16em;
+  margin-right: -.16em;
   line-height: 1;
 }
 .wordmark__adv {
@@ -190,10 +191,10 @@ p { margin: 0 0 1.1em; }
   font-style: italic;
   font-weight: 500;
   font-size: clamp(48px, 8vw, 118px);
-  letter-spacing: .03em;
-  padding-left: .03em;
+  letter-spacing: .1em;
+  margin-right: -.1em;
   line-height: 1;
-  margin-top: -.22em;
+  margin-top: -.08em;
 }
 .hero__tagline {
   margin: 56px 0 28px;
@@ -775,8 +776,8 @@ p { margin: 0 0 1.1em; }
   .contribution__list li { padding-left: 36px; font-size: 19px; }
 
   .hero { padding-top: 120px; padding-bottom: 110px; }
-  .wordmark__silk { font-size: clamp(84px, 26vw, 120px); }
-  .wordmark__adv { font-size: clamp(42px, 13vw, 60px); }
+  .wordmark__silk { font-size: clamp(72px, 22vw, 110px); }
+  .wordmark__adv { font-size: clamp(36px, 11vw, 55px); }
   .hero__tagline { margin: 40px 0 22px; letter-spacing: .26em; line-height: 2; }
   .hero__tagline-sep { display: none; }
   .hero__tagline-pair { display: block; }
