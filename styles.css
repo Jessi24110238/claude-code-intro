@@ -876,8 +876,4 @@ input, textarea, select, button {
 
 
 
-/* Hero photo in the right-hand panel */
-.hero__panel-inner { background: url(hero.jpg) center / cover no-repeat; }
-.hero__panel-inner::before { background: linear-gradient(to top, rgba(63,4,16,.45), transparent 45%); }
-.hero__panel-label,
-.hero__panel-label em { color: var(--cream); }
+
