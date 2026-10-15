@@ -129,12 +129,11 @@ p { margin: 0 0 1.1em; }
    ============================================================ */
 .hero {
   min-height: 100svh;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 140px var(--gutter) 80px;
-  gap: clamp(40px, 6vw, 96px);
+  padding: 140px var(--gutter) 120px;
   background: var(--cream);
   overflow: hidden;
 }
@@ -147,74 +146,20 @@ p { margin: 0 0 1.1em; }
 }
 .hero__copy {
   position: relative;
-  max-width: 720px;
-  justify-self: end;
-  padding-right: clamp(0px, 2vw, 40px);
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Rose panel on right — same combo as About portrait */
-.hero__panel {
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 0;
-}
-.hero__panel-inner {
-  position: relative;
-  width: 100%;
-  height: min(82vh, 760px);
-  background: linear-gradient(135deg, var(--rose-soft) 0%, var(--rose) 100%);
-  border: 1px solid var(--line);
-  display: flex;
-  align-items: flex-end;
-  padding: clamp(24px, 3vw, 44px);
-  overflow: hidden;
-}
-.hero__panel-inner::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    repeating-linear-gradient(0deg,   rgba(78,5,18,.05) 0 1px, transparent 1px 4px),
-    repeating-linear-gradient(90deg,  rgba(78,5,18,.04) 0 1px, transparent 1px 4px);
-  pointer-events: none;
-}
-.hero__panel-label {
-  position: relative;
-  font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(28px, 3.4vw, 44px);
-  line-height: 1;
-  font-style: italic;
-  letter-spacing: .02em;
-  color: var(--merlot);
-  text-transform: uppercase;
-}
-.hero__panel-label em {
-  display: block;
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
-  font-size: .55em;
-  letter-spacing: .04em;
-  text-transform: none;
-  margin-top: 6px;
-  opacity: .85;
-}
 .eyebrow {
   font-size: 11px; letter-spacing: .42em; text-transform: uppercase;
   color: var(--merlot);
   margin: 0 0 32px;
   opacity: .7;
 }
-.hero__copy { text-align: left; }
-.hero__copy .eyebrow,
-.hero__copy .hero__tagline,
-.hero__copy .hero__lede,
-.hero__copy .wordmark { text-align: left; }
-.hero__copy .hero__lede,
-.hero__copy .hero__tagline { margin-left: 0; }
 .wordmark {
   font-family: var(--display);
   font-weight: 400;
@@ -223,29 +168,34 @@ p { margin: 0 0 1.1em; }
   color: var(--ink);
 }
 .wordmark {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: var(--merlot);
 }
+/* letter-spacing also trails the last letter, so mirror it on the left to keep each line optically centred */
 .wordmark__silk {
   font-family: var(--display);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(88px, 13vw, 190px);
-  letter-spacing: .02em;
+  font-size: clamp(96px, 16vw, 236px);
+  letter-spacing: .07em;
+  padding-left: .07em;
   line-height: 1;
 }
 .wordmark__adv {
   font-family: var(--display);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(46px, 6.8vw, 100px);
+  font-size: clamp(48px, 8vw, 118px);
+  letter-spacing: .03em;
+  padding-left: .03em;
   line-height: 1;
-  margin-top: -.3em;
+  margin-top: -.22em;
 }
 .hero__tagline {
-  margin: 36px 0 24px;
+  margin: 56px 0 28px;
   font-size: 12px; letter-spacing: .42em; text-transform: uppercase;
   color: var(--merlot);
   opacity: .7;
@@ -257,8 +207,9 @@ p { margin: 0 0 1.1em; }
   font-weight: 400;
   line-height: 1.4;
   color: var(--merlot);
-  max-width: 680px;
-  margin: 0 auto 44px;
+  max-width: 700px;
+  margin: 0 auto 64px;
+  text-wrap: balance;
 }
 .hero__scroll {
   position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
@@ -787,12 +738,7 @@ p { margin: 0 0 1.1em; }
 }
 
 @media (max-width: 960px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 120px;
-  }
-  .hero__copy { justify-self: stretch; max-width: none; text-align: left; padding-right: 0; }
-  .hero__panel-inner { height: 60vh; min-height: 420px; }
+  .hero { padding-top: 120px; }
 }
 
 @media (max-width: 720px) {
@@ -825,8 +771,13 @@ p { margin: 0 0 1.1em; }
 
   .contribution__list li { padding-left: 36px; font-size: 19px; }
 
-  .hero { padding-top: 120px; }
-  .hero__lede { font-size: 17px; }
+  .hero { padding-top: 120px; padding-bottom: 110px; }
+  .wordmark__silk { font-size: clamp(84px, 26vw, 120px); }
+  .wordmark__adv { font-size: clamp(42px, 13vw, 60px); }
+  .hero__tagline { margin: 40px 0 22px; letter-spacing: .26em; line-height: 2; }
+  .hero__tagline-sep { display: none; }
+  .hero__tagline-pair { display: block; }
+  .hero__lede { font-size: 19px; margin-bottom: 48px; }
 }
 
 /* Labels, menus and buttons stay in the clean sans; running text is serif */
