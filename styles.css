@@ -212,16 +212,6 @@ p { margin: 0 0 1.1em; }
   margin: 0 auto 64px;
   text-wrap: balance;
 }
-.hero__scroll {
-  position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
-  font-size: 10px; letter-spacing: .4em; text-transform: uppercase;
-  color: var(--stone);
-}
-.hero__scroll::after {
-  content: ''; display: block; width: 1px; height: 40px;
-  background: linear-gradient(to bottom, var(--stone), transparent);
-  margin: 10px auto 0;
-}
 
 /* ============================================================
    BUTTONS
@@ -800,7 +790,7 @@ p { margin: 0 0 1.1em; }
 }
 
 /* Labels, menus and buttons stay in the clean sans; running text is serif */
-.nav__links, .eyebrow, .hero__tagline, .hero__scroll, .btn,
+.nav__links, .eyebrow, .hero__tagline, .btn,
 .section__rail, .about__rail, .tags span, .pullquote__sig, .t-year,
 .contact__form label span, .contact__label, .foot__tag, .foot__bot,
 input, textarea, select, button {
