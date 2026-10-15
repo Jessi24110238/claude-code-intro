@@ -337,6 +337,31 @@ p { margin: 0 0 1.1em; }
 }
 .about__copy { grid-column: 3; }
 .about__copy .lead { margin-top: 0; }
+.portrait-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+.portrait-caption {
+  margin-top: 18px;
+  font-family: var(--display);
+  font-size: 16px;
+  letter-spacing: .12em;
+  color: var(--ink);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.portrait-caption em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: .04em;
+  text-transform: none;
+  color: var(--merlot);
+}
 .portrait-frame {
   position: relative;
   aspect-ratio: 4 / 5;
