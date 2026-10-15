@@ -11,6 +11,7 @@
   --stone:       #9B8174;
   --rose:        #F2C8C4;   /* powder pink */
   --rose-soft:   #F7DCD8;
+  --blush:       #FAF0EC;   /* soft accent band (contact) */
   --merlot:      #5A0616;
   --merlot-deep: #3F0410;
   --merlot-text: #4E0512;
@@ -263,7 +264,16 @@ p { margin: 0 0 1.1em; }
   color: var(--cream);
 }
 .section--quote {
-  background: var(--cream-2);
+  background: var(--cream);
+}
+/* hairline between two cream sections that meet */
+.section--rule::before {
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  width: min(var(--max), calc(100% - 2 * var(--gutter)));
+  transform: translateX(-50%);
+  height: 1px;
+  background: var(--line);
 }
 
 .section__rail {
@@ -690,7 +700,7 @@ p { margin: 0 0 1.1em; }
    FOOTER
    ============================================================ */
 .foot {
-  background: var(--onyx);
+  background: var(--merlot);
   color: var(--cream);
   padding: 64px var(--gutter) 32px;
 }
@@ -702,9 +712,8 @@ p { margin: 0 0 1.1em; }
   gap: 24px; flex-wrap: wrap;
 }
 .foot__mark {
-  font-family: var(--display);
-  font-size: clamp(28px, 4vw, 44px);
-  letter-spacing: .12em;
+  line-height: 0;
+  letter-spacing: 0;
 }
 .foot__tag {
   font-size: 11px; letter-spacing: .32em; text-transform: uppercase;
@@ -816,7 +825,7 @@ input, textarea, select, button {
 
 
 /* Contact on warm cream instead of dark merlot */
-#contact { background: var(--cream-2); color: var(--ink); }
+#contact { background: var(--blush); color: var(--ink); }
 #contact .section__rail { color: rgba(78,5,18,.55); }
 #contact .section__rail .rail-num { color: var(--merlot); }
 #contact .display--light,
