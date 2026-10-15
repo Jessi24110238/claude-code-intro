@@ -517,6 +517,9 @@ p { margin: 0 0 1.1em; }
   position: relative;
   transition: background .4s ease;
 }
+@media (hover: hover) {
+  .principle:hover { background: var(--rose-soft); }
+}
 .principle__num {
   font-family: var(--sans);
   font-weight: 500;
