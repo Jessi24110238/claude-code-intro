@@ -517,11 +517,6 @@ p { margin: 0 0 1.1em; }
   position: relative;
   transition: background .4s ease;
 }
-.principle:nth-child(2),
-.principle:nth-child(4),
-.principle:nth-child(6) {
-  background: var(--rose-soft);
-}
 .principle__num {
   font-family: var(--sans);
   font-weight: 500;
