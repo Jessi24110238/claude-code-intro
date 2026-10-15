@@ -599,6 +599,15 @@ p { margin: 0 0 1.1em; }
   padding: 26px 0;
   border-bottom: 1px solid var(--line);
 }
+.career__sub {
+  max-width: var(--max);
+  margin: 72px auto 24px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 12px; letter-spacing: .42em; text-transform: uppercase;
+  color: var(--merlot);
+  opacity: .7;
+}
 .t-year {
   font-size: 11px; letter-spacing: .26em; text-transform: uppercase;
   color: var(--merlot);
