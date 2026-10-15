@@ -873,3 +873,11 @@ input, textarea, select, button {
 #contact .contact__details a { border-bottom-color: var(--line); }
 #contact .btn--light { border-color: var(--merlot); color: var(--merlot); }
 #contact .btn--light:hover { background: var(--merlot); color: var(--cream); }
+
+
+
+/* Hero photo in the right-hand panel */
+.hero__panel-inner { background: url(hero.jpg) center / cover no-repeat; }
+.hero__panel-inner::before { background: linear-gradient(to top, rgba(63,4,16,.45), transparent 45%); }
+.hero__panel-label,
+.hero__panel-label em { color: var(--cream); }
