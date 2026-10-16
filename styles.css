@@ -481,6 +481,16 @@ p { margin: 0 0 1.1em; }
   letter-spacing: .01em;
 }
 
+.services__desc {
+  grid-column: 2;
+  margin: 10px 0 0;
+  max-width: 720px;
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
 /* ============================================================
    PHILOSOPHY
    ============================================================ */
