@@ -312,6 +312,8 @@ p { margin: 0 0 1.1em; }
 /* ============================================================
    ABOUT — portrait + copy
    ============================================================ */
+/* About stays put: no fade/slide-in on scroll */
+.section--about { opacity: 1; transform: none; transition: none; }
 .section--about {
   display: grid;
   grid-template-columns: 120px minmax(240px, 1fr) minmax(0, 1.6fr);
