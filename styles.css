@@ -500,6 +500,10 @@ p { margin: 0 0 1.1em; }
   text-align: center;
   padding-top: 24px;
 }
+.phil__head .display { text-wrap: balance; }
+@media (max-width: 720px) {
+  .phil__head .display { font-size: min(44px, 10.8vw); }
+}
 .phil__intro {
   font-family: var(--serif);
   font-size: 18px;
