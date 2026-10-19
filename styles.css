@@ -762,7 +762,7 @@ p { margin: 0 0 1.1em; }
 @media (max-width: 720px) {
   .nav__links {
     position: fixed; inset: 0;
-    background: var(--cream);
+    background: var(--merlot);
     flex-direction: column;
     align-items: center; justify-content: center;
     gap: 28px;
