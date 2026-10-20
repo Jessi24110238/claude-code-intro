@@ -381,6 +381,36 @@ p { margin: 0 0 1.1em; }
 }
 
 /* ============================================================
+   BRANDS - typographic strip below About
+   ============================================================ */
+.brands {
+  padding: clamp(48px, 6vw, 88px) var(--gutter);
+  border-top: 1px solid var(--line);
+  background: var(--cream);
+}
+.brands__inner { max-width: var(--max); margin: 0 auto; text-align: center; }
+.brands__label {
+  margin: 0 0 36px;
+  font-family: var(--sans);
+  font-size: 12px; letter-spacing: .42em; text-transform: uppercase;
+  color: var(--merlot);
+  opacity: .7;
+}
+.brands__list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline;
+  gap: 18px clamp(22px, 2.6vw, 44px);
+  font-family: var(--display);
+  font-size: clamp(20px, 2.1vw, 30px);
+  color: var(--merlot);
+}
+.brands__list li { white-space: nowrap; }
+@media (max-width: 720px) {
+  .brands__label { letter-spacing: .26em; }
+  .brands__list { font-size: 21px; gap: 14px 24px; }
+}
+
+/* ============================================================
    PULL QUOTE — full merlot, cream type
    ============================================================ */
 .pullquote {
